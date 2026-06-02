@@ -1,0 +1,372 @@
+```css
+/* =========================
+   RESET GERAL
+========================= */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f2;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* =========================
+   MENU DE NAVEGAÇÃO
+========================= */
+
+header{
+    background: linear-gradient(
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    ),
+    url("../img/banner.jpg");
+
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: white;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 8%;
+
+    background-color: rgba(0,0,0,0.35);
+
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+
+    backdrop-filter: blur(8px);
+}
+
+.logo{
+    font-size: 2rem;
+    font-weight: bold;
+    color: #8fff45;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #8fff45;
+}
+
+/* =========================
+   BANNER PRINCIPAL
+========================= */
+
+.hero{
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+.hero h1{
+    font-size: 4rem;
+    max-width: 900px;
+
+    margin-bottom: 20px;
+}
+
+.hero p{
+    font-size: 1.3rem;
+    max-width: 700px;
+}
+
+.btn{
+    margin-top: 30px;
+
+    background-color: #2fa84f;
+    color: white;
+
+    padding: 15px 35px;
+
+    border-radius: 30px;
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.btn:hover{
+    transform: translateY(-4px);
+    background-color: #24883f;
+}
+
+/* =========================
+   CONFIGURAÇÃO GERAL
+========================= */
+
+section{
+    padding: 90px 10%;
+}
+
+.titulo{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.titulo h2{
+    font-size: 2.8rem;
+    color: #228B22;
+}
+
+/* =========================
+   SOBRE
+========================= */
+
+.sobre{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+    align-items: center;
+}
+
+.sobre img{
+    width: 100%;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+}
+
+.sobre h3{
+    color: #228B22;
+    font-size: 2rem;
+
+    margin-bottom: 20px;
+}
+
+.sobre p{
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.cards{
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+}
+
+.card{
+    background: white;
+
+    border-radius: 15px;
+    overflow: hidden;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+    transition: 0.4s;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card img{
+    width: 100%;
+    height: 220px;
+
+    object-fit: cover;
+}
+
+.card-content{
+    padding: 25px;
+}
+
+.card-content h3{
+    color: #228B22;
+    margin-bottom: 12px;
+}
+
+.card-content p{
+    color: #555;
+}
+
+/* =========================
+   ESTATÍSTICAS
+========================= */
+
+.estatisticas{
+    background: linear-gradient(
+        135deg,
+        #1f7a1f,
+        #34b534
+    );
+
+    color: white;
+}
+
+.estatisticas .titulo h2{
+    color: white;
+}
+
+.numeros{
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(180px, 1fr));
+
+    gap: 30px;
+
+    text-align: center;
+}
+
+.numero{
+    background: rgba(255,255,255,0.08);
+
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.numero h3{
+    font-size: 3rem;
+}
+
+.numero p{
+    margin-top: 10px;
+}
+
+/* =========================
+   GALERIA
+========================= */
+
+.galeria{
+    display: grid;
+
+    grid-template-columns:
+    repeat(auto-fit, minmax(300px, 1fr));
+
+    gap: 20px;
+}
+
+.galeria img{
+    width: 100%;
+    height: 250px;
+
+    object-fit: cover;
+
+    border-radius: 15px;
+
+    transition: 0.4s;
+}
+
+.galeria img:hover{
+    transform: scale(1.04);
+}
+
+/* =========================
+   RODAPÉ
+========================= */
+
+footer{
+    background-color: #1d1d1d;
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 20px;
+}
+
+footer h3{
+    color: #8fff45;
+    margin-bottom: 10px;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+@media (max-width: 900px){
+
+    .sobre{
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1{
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1{
+        font-size: 2.3rem;
+    }
+
+    .hero p{
+        font-size: 1rem;
+    }
+
+    .titulo h2{
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px){
+
+    .hero h1{
+        font-size: 1.8rem;
+    }
+
+    .btn{
+        padding: 12px 25px;
+    }
+
+    section{
+        padding: 70px 6%;
+    }
+}
+```
