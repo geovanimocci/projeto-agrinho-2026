@@ -1,368 +1,376 @@
-
+```html
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Agro Forte, Futuro Sustentável</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agro Forte, Futuro Sustentável</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-family:Arial, Helvetica, sans-serif;
-}
-
-html{
-    scroll-behavior:smooth;
-}
-
-body{
-    background:#f5f5f5;
-    color:#333;
-}
-
-header{
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),
-    url('https://images.unsplash.com/photo-1500937386664-56d1dfef3854');
-    background-size:cover;
-    background-position:center;
-    height:100vh;
-    color:white;
-}
-
-nav{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 8%;
-    background:rgba(0,0,0,.4);
-}
-
-.logo{
-    font-size:30px;
-    font-weight:bold;
-    color:#7CFC00;
-}
-
-nav ul{
-    display:flex;
-    list-style:none;
-}
-
-nav ul li{
-    margin-left:25px;
-}
-
-nav ul li a{
-    color:white;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-.hero{
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    flex-direction:column;
-    text-align:center;
-    height:85vh;
-}
-
-.hero h1{
-    font-size:60px;
-    max-width:900px;
-}
-
-.hero p{
-    margin-top:20px;
-    font-size:22px;
-    max-width:700px;
-}
-
-.btn{
-    margin-top:30px;
-    background:#32CD32;
-    color:white;
-    padding:15px 35px;
-    border-radius:30px;
-    text-decoration:none;
-    font-weight:bold;
-}
-
-section{
-    padding:80px 10%;
-}
-
-.titulo{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.titulo h2{
-    color:#228B22;
-    font-size:40px;
-}
-
-.cards{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:25px;
-}
-
-.card{
-    background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 15px rgba(0,0,0,.1);
-}
-
-.card img{
-    width:100%;
-    height:220px;
-    object-fit:cover;
-}
-
-.card-content{
-    padding:20px;
-}
-
-.card-content h3{
-    color:#228B22;
-    margin-bottom:10px;
-}
-
-.sobre{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:40px;
-    align-items:center;
-}
-
-.sobre img{
-    width:100%;
-    border-radius:15px;
-}
-
-.estatisticas{
-    background:#228B22;
-    color:white;
-}
-
-.numeros{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-    text-align:center;
-    gap:20px;
-}
-
-.numero h3{
-    font-size:50px;
-}
-
-.galeria{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:20px;
-}
-
-.galeria img{
-    width:100%;
-    height:250px;
-    object-fit:cover;
-    border-radius:15px;
-}
-
-footer{
-    background:#1a1a1a;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-
-@media(max-width:768px){
-
-.sobre{
-    grid-template-columns:1fr;
-}
-
-.hero h1{
-    font-size:38px;
-}
-
-.hero p{
-    font-size:18px;
-}
-
-}
-</style>
-
+    <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
-<header>
+    <!-- MENU -->
+    <header id="inicio">
 
-<nav>
-<div class="logo"> Agro Forte</div>
+        <nav>
 
-<ul>
-<li><a href="#sobre">Sobre</a></li>
-<li><a href="#praticas">Práticas</a></li>
-<li><a href="#galeria">Galeria</a></li>
-<li><a href="#impacto">Impacto</a></li>
-</ul>
+            <div class="logo">
+                🌱 Agro Forte
+            </div>
 
-</nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#praticas">Práticas</a></li>
+                <li><a href="#tecnologia">Tecnologia</a></li>
+                <li><a href="#simulador">Simulador</a></li>
+                <li><a href="#quiz">Quiz</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
 
-<div class="hero">
-<h1>Agro Forte, Futuro Sustentável</h1>
-<p>Equilíbrio entre produção agrícola e preservação ambiental para garantir alimento, desenvolvimento e qualidade de vida para as próximas gerações.</p>
+            <button id="temaBtn">
+                🌙
+            </button>
 
-<a href="#sobre" class="btn">Conhecer Projeto</a>
-</div>
+        </nav>
 
-</header>
+        <!-- BANNER PRINCIPAL -->
 
-<section id="sobre">
+        <div class="hero">
 
-<div class="titulo">
-<h2>O Futuro do Campo</h2>
-</div>
+            <h1>
+                Agro Forte, Futuro Sustentável
+            </h1>
 
-<div class="sobre">
+            <p>
+                Produzir alimentos de qualidade enquanto preservamos
+                os recursos naturais para as futuras gerações.
+            </p>
 
-<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+            <a href="#sobre" class="btn">
+                Conhecer Projeto
+            </a>
 
-<div>
-<h3 style="font-size:32px;color:#228B22;">Produzir Mais, Preservando Melhor</h3>
+        </div>
 
-<br>
+    </header>
 
-<p>
-A agricultura moderna desempenha um papel essencial na alimentação da população mundial. Porém, o crescimento da produção deve acontecer de forma responsável, respeitando os recursos naturais e garantindo a sustentabilidade do planeta.
-</p>
+    <!-- SOBRE -->
 
-<br>
+    <section id="sobre">
 
-<p>
-Tecnologias como irrigação inteligente, agricultura de precisão e energia renovável ajudam produtores rurais a aumentar a produtividade enquanto reduzem impactos ambientais.
-</p>
+        <div class="titulo">
+            <h2>Sobre o Projeto</h2>
+        </div>
 
-</div>
+        <div class="sobre">
 
-</div>
+            <img src="img/campo1.jpg" alt="Plantação sustentável">
 
-</section>
+            <div>
 
-<section id="praticas">
+                <h3>Produção e Sustentabilidade Caminhando Juntas</h3>
 
-<div class="titulo">
-<h2>Práticas Sustentáveis</h2>
-</div>
+                <p>
+                    A agricultura é fundamental para a economia e para a
+                    alimentação mundial. Entretanto, o crescimento da produção
+                    precisa ocorrer de forma responsável.
+                </p>
 
-<div class="cards">
+                <p>
+                    O objetivo deste projeto é mostrar como tecnologias,
+                    inovação e boas práticas agrícolas podem contribuir para um
+                    futuro mais sustentável.
+                </p>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
-<div class="card-content">
-<h3>Agricultura de Precisão</h3>
-<p>Uso de tecnologia para aplicar recursos apenas onde são necessários.</p>
-</div>
-</div>
+            </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
-<div class="card-content">
-<h3>Uso Consciente da Água</h3>
-<p>Sistemas inteligentes reduzem desperdícios e preservam recursos hídricos.</p>
-</div>
-</div>
+        </div>
 
-<div class="card">
-<img src="https://images.unsplash.com/photo-1472396961693-142e6e269027">
-<div class="card-content">
-<h3>Proteção da Biodiversidade</h3>
-<p>Preservação de áreas verdes e equilíbrio entre produção e natureza.</p>
-</div>
-</div>
+    </section>
 
-</div>
+    <!-- PRÁTICAS -->
 
-</section>
+    <section id="praticas">
 
-<section class="estatisticas" id="impacto">
+        <div class="titulo">
+            <h2>Práticas Sustentáveis</h2>
+        </div>
 
-<div class="titulo">
-<h2 style="color:white;">Impactos Positivos</h2>
-</div>
+        <div class="cards">
 
-<div class="numeros">
+            <article class="card">
 
-<div class="numero">
-<h3>70%</h3>
-<p>Redução do desperdício de água</p>
-</div>
+                <img src="img/precisao.jpg" alt="Agricultura de precisão">
 
-<div class="numero">
-<h3>50%</h3>
-<p>Menos emissão de poluentes</p>
-</div>
+                <div class="card-content">
+                    <h3>Agricultura de Precisão</h3>
+                    <p>
+                        Utilização de sensores, GPS e softwares para otimizar
+                        o uso de recursos.
+                    </p>
+                </div>
 
-<div class="numero">
-<h3>85%</h3>
-<p>Maior eficiência produtiva</p>
-</div>
+            </article>
 
-<div class="numero">
-<h3>100%</h3>
-<p>Compromisso com o futuro</p>
-</div>
+            <article class="card">
 
-</div>
+                <img src="img/irrigacao.jpg" alt="Irrigação inteligente">
 
-</section>
+                <div class="card-content">
+                    <h3>Irrigação Inteligente</h3>
+                    <p>
+                        Economia de água através de sistemas modernos
+                        de irrigação.
+                    </p>
+                </div>
 
-<section id="galeria">
+            </article>
 
-<div class="titulo">
-<h2>Galeria do Campo</h2>
-</div>
+            <article class="card">
 
-<div class="galeria">
+                <img src="img/energia.jpg" alt="Energia renovável">
 
-<img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+                <div class="card-content">
+                    <h3>Energia Renovável</h3>
+                    <p>
+                        Utilização de energia solar e outras fontes limpas.
+                    </p>
+                </div>
 
-<img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef">
+            </article>
 
-<img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399">
+        </div>
 
-<img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854">
+    </section>
 
-</div>
+    <!-- TECNOLOGIA -->
 
-</section>
+    <section id="tecnologia">
 
-<footer>
+        <div class="titulo">
+            <h2>Tecnologia no Campo</h2>
+        </div>
 
-<h3> Agro Forte, Futuro Sustentável</h3>
-<br>
-<p>Promovendo o equilíbrio entre produção agrícola e preservação ambiental.</p>
+        <div class="cards">
 
-</footer>
+            <article class="card">
+                <div class="card-content">
+                    <h3>🚁 Drones Agrícolas</h3>
+                    <p>
+                        Monitoramento de plantações e identificação de problemas.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-content">
+                    <h3>📡 Sensores Inteligentes</h3>
+                    <p>
+                        Controle da umidade e condições do solo em tempo real.
+                    </p>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-content">
+                    <h3>🤖 Automação</h3>
+                    <p>
+                        Máquinas inteligentes que aumentam a produtividade.
+                    </p>
+                </div>
+            </article>
+
+        </div>
+
+    </section>
+
+    <!-- ESTATÍSTICAS -->
+
+    <section class="estatisticas">
+
+        <div class="titulo">
+            <h2>Impactos Positivos</h2>
+        </div>
+
+        <div class="numeros">
+
+            <div class="numero">
+                <h3>70%</h3>
+                <p>Economia de Água</p>
+            </div>
+
+            <div class="numero">
+                <h3>50%</h3>
+                <p>Menos Poluentes</p>
+            </div>
+
+            <div class="numero">
+                <h3>85%</h3>
+                <p>Maior Eficiência</p>
+            </div>
+
+            <div class="numero">
+                <h3>100%</h3>
+                <p>Compromisso Ambiental</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SIMULADOR -->
+
+    <section id="simulador">
+
+        <div class="titulo">
+            <h2>Simulador Sustentável</h2>
+        </div>
+
+        <div class="simulador-box">
+
+            <input
+                type="number"
+                id="hectares"
+                placeholder="Digite a área da fazenda"
+            >
+
+            <button onclick="calcularImpacto()">
+                Calcular Impacto
+            </button>
+
+            <div id="resultado"></div>
+
+        </div>
+
+    </section>
+
+    <!-- QUIZ -->
+
+    <section id="quiz">
+
+        <div class="titulo">
+            <h2>Quiz do Agro</h2>
+        </div>
+
+        <div class="quiz-box">
+
+            <h3>
+                Qual tecnologia ajuda a economizar água?
+            </h3>
+
+            <label>
+                <input type="radio" name="q1" value="correto">
+                Irrigação Inteligente
+            </label>
+
+            <br>
+
+            <label>
+                <input type="radio" name="q1" value="errado">
+                Desperdício de Água
+            </label>
+
+            <br><br>
+
+            <button onclick="verificarQuiz()">
+                Ver Resultado
+            </button>
+
+            <div id="resultadoQuiz"></div>
+
+        </div>
+
+    </section>
+
+    <!-- GALERIA -->
+
+    <section id="galeria">
+
+        <div class="titulo">
+            <h2>Galeria do Campo</h2>
+        </div>
+
+        <div class="galeria">
+
+            <img src="img/galeria1.jpg" alt="">
+            <img src="img/galeria2.jpg" alt="">
+            <img src="img/galeria3.jpg" alt="">
+            <img src="img/galeria4.jpg" alt="">
+            <img src="img/galeria5.jpg" alt="">
+            <img src="img/galeria6.jpg" alt="">
+
+        </div>
+
+    </section>
+
+    <!-- CONTATO -->
+
+    <section id="contato">
+
+        <div class="titulo">
+            <h2>Entre em Contato</h2>
+        </div>
+
+        <form id="formContato">
+
+            <input
+                type="text"
+                placeholder="Seu Nome"
+                required
+            >
+
+            <input
+                type="email"
+                placeholder="Seu E-mail"
+                required
+            >
+
+            <textarea
+                rows="6"
+                placeholder="Sua mensagem"
+            ></textarea>
+
+            <button type="submit">
+                Enviar
+            </button>
+
+        </form>
+
+    </section>
+
+    <!-- RODAPÉ -->
+
+    <footer>
+
+        <h3>
+            🌱 Agro Forte, Futuro Sustentável
+        </h3>
+
+        <p>
+            Equilíbrio entre produção agrícola e preservação ambiental.
+        </p>
+
+        <br>
+
+        <p>
+            © <span id="ano"></span> Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+    <!-- VOLTAR AO TOPO -->
+
+    <button id="voltarTopo">
+        ⬆
+    </button>
+
+    <script src="js/script.js"></script>
 
 </body>
+
 </html>
 ```
-<button id="temaBtn">🌙 Modo Escuro</button>
-<input type="radio" name="q1" value="correto"> Agricultura de Precisão
-
-<input type="radio" name="q1" value="errado"> Desperdício de Água
-
-<button onclick="verificarQuiz()">
-Verificar
-</button>
-
-<div id="resultadoQuiz"></div>
-<button id="voltarTopo">⬆</button>
-<p>© <span id="ano"></span> Agro Forte</p>
